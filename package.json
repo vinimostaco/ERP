@@ -14,7 +14,11 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "tsx": "^4.19.2"
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.0",
+    "nodejs": "^0.0.0",
+    "tsx": "^4.19.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/express": "^5.0.0"

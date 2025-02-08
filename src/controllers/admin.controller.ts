@@ -1,11 +1,9 @@
-import AdminService from "../services/admin.service"
-
-export class AdminController{
-    private readonly adminService: AdminService
-
-    static create(req,res){
-        return this.adminService.create(req.body)
-    }
+import { Request, Response } from "express";
+import { createUser } from "../services/admin.service";
+import { excelToJson } from "../utils/excelToJson";
+export async function adminController(req: Request, res: Response) {
+  const jsonData = await excelToJson(req.body.sheetName);
 
 
+  
 }

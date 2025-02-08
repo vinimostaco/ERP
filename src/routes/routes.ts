@@ -1,8 +1,9 @@
-import { AdminController } from "../controllers/admin.controller";
+import { adminController } from "../controllers/admin.controller";
 import { Router } from "express";
 
 const route = Router()
 
-route.post("/createUsers", AdminController.create)
+route.post("/createUsers", adminController)
 
 export default route
+
