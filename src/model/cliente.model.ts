@@ -4,7 +4,7 @@ const clientSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
     nome: { type: String, required: true },
-    cpf: { type: String },
+    cpf: { type: String, required: true, unique: true },
     celular: { type: String },
     criar_conta: { type: String },
     plano_id: { type: String },
