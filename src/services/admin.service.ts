@@ -6,6 +6,7 @@ export class ClientService {
       const newClient = await client.create(params);
       return newClient;
     } catch (err) {
+      console.error(err);
       throw new Error(`Error at creating client`);
     }
   }
