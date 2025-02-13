@@ -4,8 +4,11 @@ import { uploadMiddleware } from "../middleware/multer";
 
 const route = Router();
 
-route.post("/createUsers", uploadMiddleware, AdminController.createUser);
-route.get("/searchFull", AdminController.returnFullBase);
+route.post("/createClient", uploadMiddleware, AdminController.createUser);
+route.delete("/deleteClient", AdminController.deleteClient)
 route.put("/updateClient", AdminController.findClient);
+route.get("/fullClients", AdminController.returnFullBase);
+
+
 
 export default route;

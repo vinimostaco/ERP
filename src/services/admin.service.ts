@@ -28,7 +28,20 @@ export class ClientService {
       throw new Error(`Error retrieving clients: ${err}`);
     }
   }
+
+  static async deleteClient(params: any) {
+    try {
+      const deleteOne: any = await client.findOneAndDelete(params);
+      return deleteOne;
+    } catch (err) {
+      throw new Error(`Error retrieving clients: ${err}`);
+    }
+  }
 }
+
+
+
+
 
 // export async function registerClient(params: any) {
 //   try {

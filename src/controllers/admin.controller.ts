@@ -65,4 +65,14 @@ export class AdminController {
       console.error(`Erro ao atualizar cliente: ${err}`);
     }
   }
+  
+  static async deleteClient(req: Request, res: Response) {
+    try {
+      const deleteOne = await ClientService.deleteClient(req.body);
+      res.send("Cliente deletado com sucesso");
+    } catch (err) {
+      console.error(`Erro ao atualizar cliente: ${err}`);
+    }
+  }
+
 }
