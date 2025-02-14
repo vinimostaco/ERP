@@ -25,7 +25,7 @@ export class ClientService {
       const { cpf } = params;
       const update: any = await client.findOneAndUpdate({ cpf });
       if (!update) {
-        console.error("Client does not exist on Database")
+        console.error("Client does not exist on Database");
         throw new Error(`Client does not exist on Database`);
       }
       return update;
@@ -38,13 +38,13 @@ export class ClientService {
     try {
       const { cpf } = params;
       console.log(cpf);
-      
+
       const deletedClient: any = await client.findOneAndDelete({ cpf });
       console.log(deletedClient);
-      
+
       if (!deletedClient) {
         // throw new Error(`Client does not exist on Database`);
-        return false
+        return false;
       }
       return deletedClient;
     } catch (err) {
@@ -52,3 +52,4 @@ export class ClientService {
     }
   }
 }
+//1111
