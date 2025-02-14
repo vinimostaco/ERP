@@ -13,14 +13,18 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
+    "erp-project": "file:",
     "express": "^4.21.2",
     "mongodb": "^6.13.0",
     "mongoose": "^8.10.0",
+    "multer": "^1.4.5-lts.1",
     "nodejs": "^0.0.0",
     "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0"
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.12"
   }
 }
